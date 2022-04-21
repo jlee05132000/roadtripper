@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+
+    <title>Roadtripper</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+
+    <div class = "main">
+<h1 style = "color: darkcyan; text-align:center; font-weight: bold; font-family: 'Franklin Gothic Medium', sans-serif; padding: 2px; border: solid 5px;">ROAD TRIPPER</h1>
+<h3 style = "text-align: center; color: darkslategrey">Enter your starting & ending destinations to begin!</h2>
+    <form id="input" class = "main" style="text-align: center;">
+      <input type="text" id="origin-city" placeholder="Enter Origin City Name">--> to -->
+      <input type="text" id="dest-city" placeholder="Enter Destination City Name">
+        <input type="submit" value="Get Updates" style="border: 3px darkcyan;">
+      </form>
+
+    <hr style="margin-top: 30px">
+    <h3 style="font-family: 'Franklin Gothic Medium', sans-serif; color: darkcyan; text-align: center;">Starting & Ending Destinations</h3>
+
+    <div id =cityNameDiv style = "text-align: center; font-weight: bold;">
+        <span id="cityNameSetup">Origin: </span>
+        <span id="cityName" >[city]</span>
+        <br/>
+
+        <span id="destCityNameSetup">Ending: </span>
+        <span id="destCityName">[city]</span>
+      </div>
+
+
+      <div id =latAndLong style=" text-align: center;">
+        <span id="lat">Origin Latitude: </span>
+        <span id="latVal" >0</span>
+        <br/>
+        <span id="lon">Origin Longitude: </span>
+        <span id="lonVal" >0</span>
+        <br/>
+        <span id="latdest">Destination Latitude: </span>
+        <span id="latValdest" >0</span>
+        <br/>
+        <span id="londest">Destination Longitude: </span>
+        <span id="lonValdest" >0</span>
+      </div>
+
+<hr style="margin-top: 30px">
+<h3 style="font-family: 'Franklin Gothic Medium', sans-serif; color: darkcyan; text-align: center;">Weather Conditions</h3>
+  <div class="weather" style="text-align: center;">
+
+
+
+    <div id="weatherContainer">
+      <div id =cityNameDiv style="font-weight: bold;">
+        <span id="cityNameSetup">Origin: </span>
+        <span id="startingName" ></span>
+
+      </div>
+
+
+
+      <span >Temperature: </span>
+
+      <span id="temp"></span>
+      <span id="main"></span>
+
+      <div id=descriptionDiv>
+        <span >Description: </span>
+
+        <span id="discription"></span>
+      </div>
+      <img id="image">
+
+      <hr style="width: 25%; margin-top: 10px; margin-bottom: 10px;">
+
+      <div id =destCityNameDiv style="font-weight:bold;">
+        <span id="destCityNameSetup">Destination: </span>
+        <span id="endingName" ></span>
+
+      </div>
+
+
+      <span >Temperature: </span>
+
+      <span id="temp2"></span>
+      <span id="main2"></span>
+
+      <div id=descriptionDiv>
+        <span >Description: </span>
+
+        <span id="discription2"></span>
+      </div>
+      <img id="image2">
+
+      <!-- <div id =latAndLong>
+        <span id="lat">LatOrigin: </span>
+        <span id="latVal" >0</span>
+        <br/>
+        <span id="lon">LonOrigin: </span>
+        <span id="lonVal" >0</span>
+        <br/>
+        <span id="latdest">LatDest: </span>
+        <span id="latValdest" >0</span>
+        <br/>
+        <span id="londest">LonDest: </span>
+        <span id="lonValdest" >0</span>
+      </div> -->
+    </div>
+</div>
+
+<hr style="margin-top: 5px; margin-bottom: 5px; ">
+<h3 style="font-family: 'Franklin Gothic Medium', sans-serif; color: darkcyan; text-align: center;">Traffic Conditions</h3>
+
+
+    <div id="trafficContainer" style="text-align: center">
+      <span id="estimatedTime">Estimated Time with Traffic: </span>
+      <span id="timeWithTraffic">Loading...</span>
+    </div>
+
+    <hr style="margin-top: 30px; margin-bottom: 5px; ">
+    <h3 style="font-family: 'Franklin Gothic Medium', sans-serif; color: darkcyan; text-align: center;">Share</h3>
+
+  <div style="text-align:center">
+  <a class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=Hello%20world"
+    data-size="large">
+  Tweet</a>
+  <script src="weather.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</body>
+
+
+
+
+</html>
